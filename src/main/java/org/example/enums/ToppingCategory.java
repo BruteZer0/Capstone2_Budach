@@ -1,9 +1,10 @@
-package org.example;
+package org.example.enums;
 
 import java.math.BigDecimal;
 
 public enum ToppingCategory {
-    //PIZZA SIZE:                   PERSONAL                           MEDIUM                    LARGE
+    //using size.ordinal to identify the topping prices that are stored in the arrays indexed
+    //PIZZA SIZE:                   index 0: PERSONAL               index 1: MEDIUM           index 2: LARGE
     STANDARD(
             new BigDecimal[]{ new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00") },
             new BigDecimal[]{ new BigDecimal("0.00"), new BigDecimal("0.00"), new BigDecimal("0.00") }

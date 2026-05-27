@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.enums.ToppingCategory;
+
 import java.math.BigDecimal;
 
 public class Topping {
