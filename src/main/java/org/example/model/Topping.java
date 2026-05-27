@@ -2,17 +2,13 @@ package org.example.model;
 
 import org.example.enums.ToppingCategory;
 
-import java.math.BigDecimal;
-
 public class Topping {
-    private String name;
-    private ToppingCategory category;
-    private BigDecimal pricePerUnit;
+    private final String name;
+    private final ToppingCategory category;
 
-    public Topping(String name, ToppingCategory category, BigDecimal pricePerUnit) {
+    public Topping(String name, ToppingCategory category) {
         this.name = name;
         this.category = category;
-        this.pricePerUnit = pricePerUnit;
     }
 
     public String getName() {
@@ -23,8 +19,8 @@ public class Topping {
         return category;
     }
 
-    public BigDecimal getPricePerUnit() {
-        return pricePerUnit;
+    public boolean isPremium() {
+        return category.isPremium();
     }
 
     @Override
