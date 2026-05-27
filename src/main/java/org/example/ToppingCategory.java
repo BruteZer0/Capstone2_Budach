@@ -1,7 +1,6 @@
 package org.example;
 
 import java.math.BigDecimal;
-import java.util.Arrays;
 
 public enum ToppingCategory {
     //PIZZA SIZE:                   PERSONAL                           MEDIUM                    LARGE
