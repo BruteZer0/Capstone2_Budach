@@ -10,7 +10,17 @@ import java.util.List;
 
 public class Order {
     private static final String     SHOP_NAME = "Pizza House";
-    private static final BigDecimal TAX_RATE  = new BigDecimal("0.00"); // spec does not mention tax; set to 0
+    private static final BigDecimal TAX_RATE  = new BigDecimal("0.08");
+
+    private String customerName;
+
+    public String getCustomerName() {
+        return customerName;
+    }
+
+    public void setCustomerName(String name) {
+        this.customerName = name;
+    }
 
     private final LocalDateTime orderTime;
     private final List<Pizza> pizzas;
@@ -92,6 +102,8 @@ public class Order {
         sb.append("Date: ")
                 .append(orderTime.format(DateTimeFormatter.ofPattern("MM/dd/yyyy hh:mm:ss a")))
                 .append("\n");
+        sb.append("Customer: ").append(customerName != null ? customerName : "Guest").append("\n");
+
         sb.append(thin);
 
         if (!pizzas.isEmpty()) {
@@ -119,7 +131,7 @@ public class Order {
         }
         sb.append(String.format("  TOTAL:     $%6.2f%n", getTotal()));
         sb.append(divider);
-        sb.append("      Thank you for choosing ").append(SHOP_NAME).append("!\n");
+        sb.append("   Thank you for choosing ").append(SHOP_NAME).append("!\n");
         sb.append(divider);
 
         return sb.toString();

@@ -1,0 +1,24 @@
+========================================
+           Pizza House
+========================================
+Date: 05/27/2026 10:02:23 PM
+Customer: Joe
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  Personal (8") | Thin + Stuffed Crust | Sauce: Marinara
+    Toppings:
+      - Pepperoni (+$1.00)
+      - Mozzarella (+$0.75)
+      - Onions
+    Sides: Red Pepper, Parmesan
+    Pizza Subtotal: $13.24
+DRINKS:
+  Large Orange Soda              $3.00
+----------------------------------------
+  Subtotal:  $ 16.24
+  Tax:       $  1.30
+  TOTAL:     $ 17.54
+========================================
+   Thank you for choosing Pizza House!
+========================================

@@ -8,8 +8,9 @@ import org.example.data.Pizza;
 public class OrderService {
     private Order currentOrder;
 
-    public void startNewOrder() {
+    public void startNewOrder(String customerName) {
         currentOrder = new Order();
+        currentOrder.setCustomerName(customerName);
     }
 
     public void cancelOrder() {

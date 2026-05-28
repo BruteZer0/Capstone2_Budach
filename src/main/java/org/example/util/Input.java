@@ -1,67 +1,95 @@
 package org.example.util;
 
+import org.beryx.textio.TextIO;
+import org.beryx.textio.TextIoFactory;
+import org.beryx.textio.TextTerminal;
+
 import java.util.List;
-import java.util.Scanner;
 
 public class Input {
-
-    private static final Scanner SCANNER= new Scanner(System.in);
+    private static final TextIO       textIO   = TextIoFactory.getTextIO();
+    private static final TextTerminal terminal = textIO.getTextTerminal();
 
     private Input() {}
 
     public static int readInt(String prompt, int min, int max) {
-        while (true) {
-            System.out.print(prompt);
-            try {
-                int value = Integer.parseInt(SCANNER.nextLine().trim());
-                if (value >= min && value <= max) return value;
-                System.out.printf("  Please enter a number between %d and %d.%n", min, max);
-            } catch (NumberFormatException e) {
-                System.out.println("  Invalid input — please enter a number.");
-            }
-        }
+        return textIO.newIntInputReader()
+                .withMinVal(min)
+                .withMaxVal(max)
+                .read(prompt);
+    }
+
+    public static boolean readYesNo(String prompt) {
+        return textIO.newBooleanInputReader()
+                .withTrueInput("y")
+                .withFalseInput("n")
+                .read(prompt);
+    }
+
+    public static String readLine(String prompt) {
+        return textIO.newStringInputReader()
+                .withMinLength(1)
+                .read(prompt);
     }
 
     public static <T> T pickFromList(String prompt, List<T> items) {
-        System.out.println(prompt);
+        if (!prompt.isEmpty()) {
+            terminal.println(prompt);
+        }
         for (int i = 0; i < items.size(); i++) {
-            System.out.printf("  %d. %s%n", i + 1, items.get(i));
+            terminal.printf("  %d. %s%n", i + 1, items.get(i));
         }
         int choice = readInt("Enter choice: ", 1, items.size());
         return items.get(choice - 1);
     }
 
-    public static boolean readYesNo(String prompt) {
-        while (true) {
-            System.out.print(prompt + " (y/n): ");
-            String in = SCANNER.nextLine().trim().toLowerCase();
-            if (in.equals("y") || in.equals("yes")) return true;
-            if (in.equals("n") || in.equals("no"))  return false;
-            System.out.println("  Please enter 'y' or 'n'.");
-        }
+    public static void println(String message) {
+        terminal.println(message);
     }
 
-    public static String readLine(String prompt) {
-        while (true) {
-            System.out.print(prompt);
-            String in = SCANNER.nextLine().trim();
-            if (!in.isEmpty()) return in;
-            System.out.println("  Input cannot be blank.");
-        }
+    public static void printf(String format, Object... args) {
+        terminal.printf(format, args);
     }
 
     public static void pressEnterToContinue() {
-        System.out.print("\nPress ENTER to continue...");
-        SCANNER.nextLine();
+        textIO.newStringInputReader()
+                .withMinLength(0)
+                .read("\nPress ENTER to continue...");
     }
 
     public static void printDivider() {
-        System.out.println("----------------------------------------");
+        printWithColor("----------------------------------------", "cyan");
     }
 
     public static void printHeader(String title) {
-        System.out.println("\n========================================");
-        System.out.println("  " + title);
-        System.out.println("========================================");
+        printWithColor("\n========================================", "cyan");
+        printWithColor("  " + title,                               "cyan");
+        printWithColor("========================================",  "cyan");
+    }
+
+    public static void printWithColor(String message, String color) {
+        terminal.getProperties().setPromptColor(color);
+        terminal.println(message);
+        terminal.getProperties().setPromptColor((String) null);
+    }
+
+    public static void printSuccess(String message) {
+        printWithColor(message, "green");
+    }
+
+    public static void printError(String message) {
+        printWithColor(message, "red");
+    }
+
+    public static void printHighlight(String message) {
+        printWithColor(message, "yellow");
+    }
+
+    public static void resetColor() {
+        terminal.getProperties().setPromptColor("cyan");
+    }
+
+    public static void dispose() {
+        textIO.dispose();
     }
 }

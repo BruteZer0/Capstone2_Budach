@@ -4,7 +4,7 @@ import org.example.data.Order;
 import org.example.util.FileManager;
 
 public class ReceiptService {
-    private static final String RECEIPTS_DIR = "src/main/resources/receipts";
+    private static final String RECEIPTS_DIR = "src/main/resources";
 
     public ReceiptService() {
         FileManager.ensureDirectory(RECEIPTS_DIR);
