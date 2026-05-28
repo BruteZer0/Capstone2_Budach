@@ -3,10 +3,10 @@ package org.example.enums;
 import java.math.BigDecimal;
 
 public enum CrustType {
-    THIN        ("Thin",        new BigDecimal("1.00")),
-    REGULAR     ("Regular",     new BigDecimal("1.50")),
-    THICK       ("Thick",       new BigDecimal("2.00")),
-    CAULIFLOWER ("Cauliflower", new BigDecimal("2.50"));
+    THIN        ("Thin",        new BigDecimal("0.50")),
+    REGULAR     ("Regular",     new BigDecimal("1.00")),
+    THICK       ("Thick",       new BigDecimal("1.50")),
+    CAULIFLOWER ("Cauliflower", new BigDecimal("2.00"));
 
     private final String displayName;
     private final BigDecimal extraCost;

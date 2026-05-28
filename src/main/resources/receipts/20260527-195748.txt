@@ -1,0 +1,27 @@
+========================================
+           Pizza House
+========================================
+Date: 05/27/2026 07:57:48 PM
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  [SIGNATURE: Meat Lover] [Meat Lover] Medium (12") | Regular + Stuffed Crust | Sauce: Marinara
+    Toppings:
+      - Pepperoni x2 (+$3.00)
+      - Sausage (+$2.00)
+      - Bacon (+$2.00)
+      - Ham (+$2.00)
+      - Goat Cheese (+$1.50)
+      - Tomatoes
+    Sides: Red Pepper
+    Pizza Subtotal: $25.50
+DRINKS:
+  Large Dr Pepper                $3.00
+GARLIC KNOTS:
+  Garlic Knots x2                $3.00
+----------------------------------------
+  Subtotal:  $ 31.50
+  TOTAL:     $ 31.50
+========================================
+      Thank you for choosing Pizza House!
+========================================

@@ -1,0 +1,26 @@
+========================================
+           Pizza House
+========================================
+Date: 05/27/2026 07:08:48 PM
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  Medium (12") | Thick + Stuffed Crust | Sauce: Pesto
+    Toppings:
+      - Sausage (+$2.00)
+      - Bacon (+$2.00)
+      - Ham (+$2.00)
+      - Chicken x2 (+$3.00)
+      - Meatball (+$2.00)
+      - Buffalo (+$1.50)
+      - Mushrooms
+      - Olives
+      - Tomatoes
+    Sides: Parmesan
+    Pizza Subtotal: $28.00
+----------------------------------------
+  Subtotal:  $ 28.00
+  TOTAL:     $ 28.00
+========================================
+      Thank you for choosing Pizza House!
+========================================

@@ -1,6 +1,9 @@
-package org.example.model;
+package org.example.data;
 
+import org.example.enums.PizzaSize;
 import org.example.enums.ToppingCategory;
+
+import java.math.BigDecimal;
 
 public class Topping {
     private final String name;
@@ -21,6 +24,14 @@ public class Topping {
 
     public boolean isPremium() {
         return category.isPremium();
+    }
+
+    public BigDecimal getFirstUnitPrice(PizzaSize size) {
+        return category.getFirstUnitPrice(size);
+    }
+
+    public BigDecimal getExtraUnitPrice(PizzaSize size) {
+        return  category.getExtraUnitPrice(size);
     }
 
     @Override
