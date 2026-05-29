@@ -16,16 +16,12 @@
 
     <dependencies>
 
-        <!-- your existing dependencies if any -->
-
-        <!-- TextIO -->
         <dependency>
             <groupId>org.beryx</groupId>
             <artifactId>text-io</artifactId>
             <version>3.4.1</version>
         </dependency>
 
-        <!-- Jansi - required by TextIO for colors -->
         <dependency>
             <groupId>org.fusesource.jansi</groupId>
             <artifactId>jansi</artifactId>

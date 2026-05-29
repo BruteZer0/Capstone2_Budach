@@ -1,0 +1,25 @@
+========================================
+           Pizza House
+========================================
+Date: 05/28/2026 01:20:27 PM
+Customer: Mike
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  Medium (12") | Thin + Stuffed Crust | Sauce: Pesto
+    Toppings:
+      - Bacon (+$2.00)
+      - Parmesan (+$1.50)
+      - Spinach
+      - Mushrooms x3
+    Sides: Red Pepper
+    Pizza Subtotal: $18.00
+DRINKS:
+  Large Dr Pepper                $3.00
+----------------------------------------
+  Subtotal:  $ 21.00
+  Tax:       $  1.68
+  TOTAL:     $ 22.68
+========================================
+   Thank you for choosing Pizza House!
+========================================
