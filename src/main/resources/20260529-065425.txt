@@ -1,0 +1,45 @@
+========================================
+           Pizza House
+========================================
+Date: 05/29/2026 06:54:25 AM
+Customer: Uy
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  [SIGNATURE: Meat Lover] [Meat Lover] Personal (8") | Regular | Sauce: Marinara
+    Toppings:
+      - Pepperoni (+$1.00)
+      - Sausage (+$1.00)
+      - Bacon (+$1.00)
+      - Ham (+$1.00)
+      - Onions
+      - Mushrooms
+      - Bell Peppers
+      - Olives
+      - Tomatoes
+      - Spinach
+    Sides: Parmesan
+    Pizza Subtotal: $13.99
+  Pizza #2
+  Medium (12") | Regular + Stuffed Crust | Sauce: Marinara
+    Toppings:
+      - Pepperoni x2 (+$3.00)
+      - Sausage (+$2.00)
+      - Parmesan x2 (+$2.10)
+      - Bell Peppers x3
+      - Mushrooms
+      - Olives x2
+      - Tomatoes x2
+    Sides: Red Pepper
+    Pizza Subtotal: $22.10
+DRINKS:
+  Large Lemonade                 $3.00
+GARLIC KNOTS:
+  Garlic Knots x2                $3.00
+----------------------------------------
+  Subtotal:  $ 42.09
+  Tax:       $  3.37
+  TOTAL:     $ 45.46
+========================================
+   Thank you for choosing Pizza House!
+========================================
