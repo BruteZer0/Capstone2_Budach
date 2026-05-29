@@ -1,0 +1,25 @@
+========================================
+           Pizza House
+========================================
+Date: 05/29/2026 12:22:23 AM
+Customer: Philip
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  [SIGNATURE: Veggie] [Veggie] Large (16") | Regular + Stuffed Crust | Sauce: Marinara
+    Toppings:
+      - Bell Peppers
+      - Spinach
+      - Olives
+      - Onions
+      - Mozzarella (+$2.25)
+      - Mushrooms
+    Sides: Parmesan
+    Pizza Subtotal: $21.75
+----------------------------------------
+  Subtotal:  $ 21.75
+  Tax:       $  1.74
+  TOTAL:     $ 23.49
+========================================
+   Thank you for choosing Pizza House!
+========================================

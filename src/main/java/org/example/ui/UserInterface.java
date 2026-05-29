@@ -304,7 +304,7 @@ public class UserInterface {
             }
             Input.println("  0. No more sides");
 
-            int choice = Input.readInt("Add side: ", 0, sides.size());
+            int choice = Input.readInt("\nAdd side: ", 0, sides.size());
             if (choice == 0) break;
             pizza.addSide(sides.get(choice - 1));
             Input.printSuccess("  Added: " + sides.get(choice - 1));

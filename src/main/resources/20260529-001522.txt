@@ -1,0 +1,43 @@
+========================================
+           Pizza House
+========================================
+Date: 05/29/2026 12:15:22 AM
+Customer: Uy
+----------------------------------------
+PIZZAS:
+  Pizza #1
+  Personal (8") | Thin + Stuffed Crust | Sauce: Pesto
+    Toppings:
+      - Pepperoni x3 (+$2.00)
+      - Goat Cheese (+$0.75)
+    Sides: Parmesan, Red Pepper
+    Pizza Subtotal: $14.24
+  Pizza #2
+  Large (16") | Regular + Stuffed Crust | Sauce: Alfredo
+    Toppings:
+      - Pepperoni x2 (+$4.50)
+      - Sausage (+$3.00)
+      - Ham (+$3.00)
+      - Bacon (+$3.00)
+      - Mozzarella (+$2.25)
+      - Parmesan (+$2.25)
+      - Goat Cheese (+$2.25)
+      - Onions x2
+      - Mushrooms
+      - Bell Peppers x2
+      - Olives
+      - Tomatoes
+      - Spinach
+    Sides: Red Pepper, Parmesan, Red Pepper, Parmesan
+    Pizza Subtotal: $39.75
+DRINKS:
+  Medium Diet Coke               $2.50
+GARLIC KNOTS:
+  Garlic Knots x3                $4.50
+----------------------------------------
+  Subtotal:  $ 60.99
+  Tax:       $  4.88
+  TOTAL:     $ 65.87
+========================================
+   Thank you for choosing Pizza House!
+========================================
